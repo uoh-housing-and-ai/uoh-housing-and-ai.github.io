@@ -49,7 +49,7 @@ export default function Publications({ preview = false }: PublicationsProps) {
           ))}
         </div>
 
-        {preview ? (
+        {preview && visiblePublications.length > 2 ? (
           <div className="mt-8">
             <Link href="/outputs" className="btn-secondary">View All Outputs</Link>
           </div>
